@@ -1,0 +1,21 @@
+---
+rts:
+  # 下方为标准的数据
+#  Url: "http://roxe-rts-bj-test.roxepro.top:38888/system/state"
+#  Url: "http://roxe-rts21-bj-test.roxepro.top:38888/router/get-router-list"
+#  Url: "http://roxe-rts-bj-test.roxepro.top:38888/order/submit"
+#  Url: "http://10.11.5.173:9000/system/state"
+#  Url: "http://10.11.5.173:9000/order/submit"
+#  Url: "http://10.11.9.154:9000/order/submit"
+  Url: "http://172.17.3.104:9000/order/submit"
+  Method: POST
+  DoSleepTime: 800 # 发送请求的间隔时间，单位为微秒
+  NewRequestEachTime: true
+  Headers:
+    - "timestamp: 1642556741357"
+    - "apiId: JQ3wRBWVxwh4r9eq6V08gWF3mUuQTbn7"
+    - "sign: aIS8IHDTiOCyN20+HnKhPZUhWgsYsSdPYP5StWA16YTyYdJWWeXsh2yIRaDEEMLzCvYQyQVkEQdL0QUB9SQYorPBXGA8WGB2/6NHofzZUpM4QLl4QT4LwLSyhK2w69t4Q386ElyKO/H1THmHVy2NbozwWInkjlaghHllKB/cBHfMKDn2RwKOPjGv8CJjuLywk4QBLku+QfX/64YmLTKoCzOJKrIVqFAdLlPJIRjXd/LkPOom0TOxvEPq3gRAcy7h98QfmNOf/nxgqyoHLHpwtHh695e++Sjy5szk3RGEDEydgNGI9Oo/k9eHH3KWM9On12PgZsxu68RVmi0qd9IKAg=="
+  Body: '{"resource":{"algorithm":"AES_256_GCM","ciphertext":"MXDp8flytyEorSzreNwHu3Tp7Ye9XrexSvRLdYudmTmqu5waW51+jzWvdDulYLeGqY2IIWybqLq28ZmyCg/IP76znBaAKUNbw+9+5mvP1ySjoYc13lVoLg3EptK08fmBMryYzcvP+ptnl3o6xtAl15K/Nmz/4siAth7YZyoxj/IF2wmOUGCovLUU2VqUFIIlg/0OQK/PAvfAvl40gO5L4V0lgOi+1sgXHSfyBEI/dy23JUbIjgOTbM06+tqtDzPF8Cv4Ra8=","associatedData":"eKdj7Iklsc82djH","nonce":"Jdiw8ID12yHyd123"}}'
+  # 下面为附加数据
+  SecretKey: "5f20e76fe8ba4b6cbb0d316fb3478f2c"
+  RsaKeyFile: /Users/admin/PycharmProjects/roxeapiautotest/RTS/rsa_private_key.pem
